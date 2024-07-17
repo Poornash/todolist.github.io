@@ -13,6 +13,17 @@ body {
     font-style: normal;
     color: #c4a483;
 }
+body::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(2px); 
+    z-index: -1; 
+}
 h1 {
     font-size: 40px;
     margin-top: 10px;
